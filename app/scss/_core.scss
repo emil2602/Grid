@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+header,
+footer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.main__column-left,
+.main__column-right {
+    padding: 20px;
+}

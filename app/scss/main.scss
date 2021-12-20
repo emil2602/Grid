@@ -1,0 +1,41 @@
+@import './core';
+@import './variables';
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    header {
+        background: #4267B2;
+    }
+
+    .main__column-left {
+        background: #e0752d;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+
+        @media(min-width:$desktop-width) {
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 1fr;
+        }
+
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+    }
+
+    .main__column-right {
+        background: #85004d;
+    }
+
+    footer {
+        background: #199400d3;
+    }
+}
